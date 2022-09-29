@@ -17,6 +17,11 @@ public class Cat {
                 '}';
     }
 
+    // промежуточные методы (intermediate) методы должны: 1.- возврвщать ссылку на текущий объект билдера
+    //2. - они не должны прерывать проццес построения
+    // конечный (terminated) метод должен завершать процесс построения и возвращать итоговый объект.
+
+
     public static class Builder {
         private Cat cat= new Cat();
         public Builder  setName(String name){
